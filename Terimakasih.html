@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Terima Kasih</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #43e97b, #38f9d7);
+            text-align: center;
+            padding: 100px;
+        }
+        .box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: #43e97b;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Terima Kasih!</h2>
+    <p>Data Anda sudah berhasil dikirim.</p>
+
+    <button onclick="kembali()">Kembali ke Awal</button>
+</div>
+
+<script>
+function kembali() {
+    window.location.href = "justine.html";
+}
+</script>
+
+</body>
+</html>

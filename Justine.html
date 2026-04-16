@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Olahraga Favorit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 350px;
+            margin: auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #4facfe;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Olahraga Favorit</h2>
+    <form onsubmit="return validasi()" action="terimakasih.html">
+        
+        <input type="text" id="nama" placeholder="Masukkan Nama">
+        
+        <select id="olahraga">
+            <option value="">Pilih Olahraga</option>
+            <option>Sepak Bola</option>
+            <option>Basket</option>
+            <option>Badminton</option>
+            <option>Renang</option>
+        </select>
+
+        <button type="submit">Kirim</button>
+    </form>
+</div>
+
+<script>
+function validasi() {
+    let nama = document.getElementById("nama").value;
+    let olahraga = document.getElementById("olahraga").value;
+
+    if (nama === "" || olahraga === "") {
+        alert("Harap isi semua data!");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</body>
+</html>
